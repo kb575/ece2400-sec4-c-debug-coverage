@@ -1,4 +1,3 @@
-
 #include "utst.h"
 
 int gcd( int x, int y )
@@ -6,8 +5,9 @@ int gcd( int x, int y )
   while ( y != 0 ) {
     if ( x < y ) {
       int temp = x;
+      int temp2=y; 
       y = temp;
-      x = y;
+      x = temp2;
     }
     else {
       x = x - y;
@@ -25,4 +25,5 @@ int main()
   UTST_END();
   return 0;
 }
+
 
